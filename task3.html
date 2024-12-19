@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        table{
+            text-align: center;
+            width: 80vw;
+            margin: 10px;
+        }
+        td{
+            padding: 10px;
+        }
+        .inputfield{
+            border-collapse: collapse;
+        }
+      
+    </style>
+</head>
+<body>
+        <form action="get">
+        <table class="inputfield" border="1">
+            <tr>
+                <td> <label for="username">Username</label></td>
+                <td><input type="text" required id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="bikeno">Bike No</label></td>
+                <td><input type="text"  id="bikeno"></td>
+            </tr>
+            <tr>
+                <td><label for="checkin">Check In</label></td>
+                <td><input type="time"  id="checkin"></td>
+            </tr>
+            <tr>
+                <td><label for="checkout">Check Out</label></td>
+                <td><input type="time" id="checkout"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="clfun()" id="subbtn">Submit</button></td>
+           </tr>
+        </table>
+    </form>
+
+
+    <div id="resultdiv">
+        <table id="table" border="1">
+            <tr>
+                <th>S.no</th>
+                <th>User name</th>
+                <th>Bike No</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Delete</th>
+            </tr>        
+        </table>
+    </div>
+
+    <script src="../JavaScript/task3.js"></script>
+</body>
+</html>
